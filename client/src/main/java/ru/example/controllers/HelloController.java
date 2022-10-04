@@ -1,7 +1,7 @@
 package ru.example.controllers;
 
 
-import io.swagger.v3.oas.annotations.Operation;
+import de.codecentric.boot.admin.client.config.SpringBootAdminClientAutoConfiguration;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -11,7 +11,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
-import ru.example.starter.PrintMethodTime;
+import ru.example1.starter.PrintMethodTime;
 
 @RestController
 @RequestMapping("/api")
@@ -21,7 +21,7 @@ public class HelloController {
     volatile private String hello = "hello";
 
     @PrintMethodTime
-    @GetMapping(value = "/{name}", consumes = "application/json")
+    @GetMapping(value = "/{name}")
 //    @Operation(summary = "Get hello with your name", tags = "name")
     @ApiResponses(value = {
             @ApiResponse(

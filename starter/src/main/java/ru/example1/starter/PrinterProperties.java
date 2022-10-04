@@ -1,4 +1,4 @@
-package ru.example.starter;
+package ru.example1.starter;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

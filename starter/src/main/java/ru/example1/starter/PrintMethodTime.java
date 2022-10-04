@@ -1,4 +1,4 @@
-package ru.example.starter;
+package ru.example1.starter;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

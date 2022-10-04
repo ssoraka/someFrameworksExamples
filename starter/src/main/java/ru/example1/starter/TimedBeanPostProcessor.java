@@ -1,4 +1,4 @@
-package ru.example.starter;
+package ru.example1.starter;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -6,7 +6,6 @@ import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;
 
 import java.lang.reflect.Method;
-import java.time.LocalDateTime;
 
 public class TimedBeanPostProcessor implements BeanPostProcessor {
 
